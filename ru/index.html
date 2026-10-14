@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hourfield — часы, собранные из часов</title><meta name="description" content="Живые часы из маленьких часов для стола или прикроватной тумбы. Бесплатно, без рекламы, никогда не отвлекает. Горят всю ночь и приглушаются до янтаря.">
+<meta property="og:title" content="Hourfield — часы, собранные из часов"><meta property="og:description" content="Живые часы из маленьких часов для стола или прикроватной тумбы. Бесплатно, без рекламы, никогда не отвлекает. Горят всю ночь и приглушаются до янтаря.">
+<meta property="og:image" content="../assets/og.png"><meta name="theme-color" content="#000000">
+<link rel="icon" href="../assets/icon-180.png"><link rel="apple-touch-icon" href="../assets/icon-180.png">
+<link rel="alternate" hreflang="en" href="../">
+<link rel="stylesheet" href="../assets/tokens.css"><style>
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--color-bg);color:var(--color-text);font:18px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif}
+a{color:var(--color-accent-text)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;gap:10px;align-items:center;font-weight:700;font-size:19px;color:var(--color-text);text-decoration:none}
+.brand img{width:34px;height:34px;border-radius:9px}
+.lang{font-size:15px;color:var(--color-text-muted);text-decoration:none}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:40px 0 64px;
+  background:radial-gradient(ellipse 60% 70% at 75% 40%,color-mix(in srgb,var(--color-accent) 18%,transparent),transparent 70%)}
+.hero h1{font-size:clamp(36px,5.4vw,60px);line-height:1.04;margin:0 0 18px;letter-spacing:-.03em}
+.hero h1 em{font-style:normal;color:var(--color-accent-text)}
+.hero p{font-size:19px;color:var(--color-text-muted);margin:0 0 28px;max-width:34em}
+.btn{display:inline-block;background:var(--color-accent);color:var(--color-on-accent);padding:15px 26px;border-radius:999px;font-weight:600;text-decoration:none}
+.btn.muted{background:var(--color-surface);color:var(--color-text)}
+.shot{width:100%;max-width:340px;justify-self:center;border-radius:44px;box-shadow:0 0 0 1px var(--color-face),0 30px 90px color-mix(in srgb,var(--color-accent) 30%,transparent)}
+section{padding:56px 0;border-top:1px solid var(--color-surface)}
+h2{font-size:clamp(26px,3.4vw,34px);margin:0 0 22px;letter-spacing:-.015em}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--color-surface);border-radius:22px;padding:22px}
+.card h3{margin:0 0 6px;font-size:18px}.card p{margin:0;color:var(--color-text-muted)}
+ol.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:s}
+ol.steps li{counter-increment:s;background:var(--color-surface);border-radius:22px;padding:22px}
+ol.steps li::before{content:counter(s);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--color-accent);color:var(--color-on-accent);font-weight:700;margin-bottom:10px}
+ol.steps b{display:block;margin-bottom:4px}
+.problem p{font-size:19px;color:var(--color-text-muted);max-width:40em}
+.price{text-align:center}.price p{color:var(--color-text-muted)}
+details{background:var(--color-surface);border-radius:16px;padding:16px 20px;margin-bottom:10px}
+summary{font-weight:600;cursor:pointer}details p{margin:10px 0 0;color:var(--color-text-muted)}
+.final{text-align:center}
+footer{padding:28px 0 48px;color:var(--color-text-muted);font-size:15px;display:flex;gap:18px;flex-wrap:wrap}
+footer a{color:var(--color-text-muted)}
+.doc{max-width:720px;padding-bottom:60px}.doc h1{font-size:34px}.doc p{margin:0 0 16px}
+@media (max-width:820px){.hero{grid-template-columns:1fr;padding-top:16px}.grid,ol.steps{grid-template-columns:1fr}.shot{max-width:280px}}
+</style></head>
+<body><div class="wrap"><header class="top"><a class="brand" href="./"><img src="../assets/icon-180.png" alt="">Hourfield</a>
+<a class="lang" href="../" hreflang="en">English</a></header>
+<main>
+<div class="hero"><div><h1>Часы, собранные <em>из часов.</em></h1><p>Каждую минуту поле маленьких часов поворачивает стрелки и складывает их в цифры. Бесплатно, без рекламы и никогда не отвлекает.</p><span class="btn muted">Скоро в App Store</span></div>
+<img class="shot" src="../assets/shot-ru.png" alt="Hourfield показывает 09:41 полем маленьких янтарных часов на чёрном"></div>
+<section class="problem"><h2>Часы должны быть просто часами</h2><p>Многие часы для стола и тумбочки показывают рекламу, прячут цвета или будильник за оплату и останавливают таймер, чтобы попросить оценку.</p><p>А многие гаснут посреди ночи — или светят так, что не уснуть.</p></section>
+<section><h2>Как это работает</h2><ol class="steps"><li><b>Откройте Hourfield</b>Время сразу на экране. Без аккаунта и настройки.</li><li><b>Выберите вид</b>Часы из часов, перекидные, никси-лампы, стрелочные, матрица или сегменты — в восьми цветах.</li><li><b>Оставьте включёнными</b>На столе во время работы или у кровати ночью: экран не гаснет и приглушается до янтаря.</li></ol></section>
+<section><h2>Спокойно — и днём, и ночью</h2><div class="grid"><div class="card"><h3>Бесплатно. Без рекламы. Без отвлечений.</h3><p>Всё включено. Ни покупок, ни просьб об оценке посреди таймера.</p></div><div class="card"><h3>Ночной режим</h3><p>Янтарные цифры на чёрном, без синего света, затемнение по расписанию. Яркость экрана не меняется.</p></div><div class="card"><h3>Фокус с настоящими перерывами</h3><p>Фокус, короткий и длинный перерыв. Уведомление на каждой смене и оставшееся время на экране блокировки.</p></div><div class="card"><h3>Звуки для сна и работы</h3><p>Дождь, костёр, ветер, сверчки и салон самолёта. Смешивайте, а таймер сна плавно их выключит.</p></div><div class="card"><h3>Стекло</h3><p>Часы парят над мягким фоном и чуть двигаются при наклоне iPhone.</p></div><div class="card"><h3>Виджеты и StandBy</h3><p>Все стили на главном экране и в StandBy; часы на экране блокировки во всю полосу.</p></div><div class="card"><h3>Настоящий будильник</h3><p>Звонит на заблокированном телефоне и в беззвучном режиме (iOS 26 и новее).</p></div><div class="card"><h3>Siri и Пункт управления</h3><p>«Начни фокус в Hourfield».</p></div><div class="card"><h3>Приватно</h3><p>Без аккаунта и слежки. Всё остаётся на iPhone.</p></div></div></section>
+<section class="price"><h2>Бесплатно. Всё включено.</h2><p>Без рекламы, подписки и платных функций.</p><p>Если Hourfield вам по душе, можно сказать спасибо — по желанию, это ничего не открывает.</p><p><a class="btn muted" href="https://boosty.to/vladislove_online/donate">Поблагодарить</a></p></section>
+<section><h2>Вопросы</h2><details><summary>Правда бесплатно? В чём подвох?</summary><p>Подвоха нет: ни рекламы, ни подписки, ни слежки.</p></details><details><summary>Сильно садит батарею?</summary><p>Часы перерисовываются, только пока движутся стрелки, а между этим отдыхают. На ночь ставьте iPhone на зарядку.</p></details><details><summary>Меняет ли яркость экрана?</summary><p>Нет. Ночной режим затемняет только само приложение.</p></details><details><summary>Таймер работает на заблокированном телефоне?</summary><p>Да. Фокус и перерывы идут по реальному времени, а на каждой смене приходит уведомление.</p></details><details><summary>На каких устройствах?</summary><p>iPhone и iPad с iOS 17 и новее. Будильнику нужна iOS 26 и новее.</p></details><details><summary>Какие языки?</summary><p>Русский и английский — и по одному новому языку в каждом обновлении.</p></details></section>
+<section class="final"><h2>Поставьте на стол маленькую кинетическую скульптуру.</h2><span class="btn muted">Скоро в App Store</span></section>
+</main>
+<footer><span>© 2026 Hourfield</span><a href="https://apps.vladislove.online/">Приложения</a><a href="privacy.html">Конфиденциальность</a><a href="terms.html">Условия</a><a href="support.html">Поддержка</a></footer>
+</div></body></html>
